@@ -1,5 +1,4 @@
 .form {
-  width: 528px;
   min-height: 581px;
   margin-left: auto;
   margin-right: auto;
@@ -22,11 +21,11 @@
   border-radius: 2px;
 
   min-height: 40px;
-  width: 448px;
+  width: 100%;
 }
 
 .form-field__textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid #21212133;
   border-radius: 2px;
@@ -87,7 +86,7 @@
 }
 
 .policy__label {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
   margin-top: 10px;
   display: flex;
@@ -100,6 +99,10 @@
     border: 1px solid var(--title-text-color);
     border-radius: 2px;
     margin-right: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
@@ -147,11 +150,8 @@
   min-height: 50px;
   padding-bottom: 10px;
   padding-top: 10px;
-
+  margin: auto;
   margin-top: 30px;
-  margin-left: 124px;
-  padding-right: 28px;
-  padding-left: 29px;
 
   color: var(--additional-text-color-white);
   background-color: var(--accent-color);
@@ -164,6 +164,17 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 124px;
+    padding-right: 28px;
+    padding-left: 29px;
+  }
 }
 
 .form-field__input {
