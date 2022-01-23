@@ -97,10 +97,16 @@ img {
   color: #000000;
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo__web {
@@ -322,6 +328,18 @@ img {
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
     -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) fill;
+  }
+}
+
+.contacts__icon .contacts__icon.contacts__icon-mail {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon .contacts__icon.contacts__icon-mail {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -1665,6 +1683,10 @@ img {
     line-height: 47px;
     letter-spacing: 0.02em;
   }
+}
+
+.site-nav__link.current {
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
