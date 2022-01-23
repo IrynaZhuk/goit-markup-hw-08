@@ -331,21 +331,33 @@ img {
   }
 }
 
-.contacts__icon .contacts__icon.contacts__icon-mail {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.contacts__icon.tel {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon.tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contacts__icon.mail {
   width: 14px;
   height: 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__icon .contacts__icon.contacts__icon-mail {
-    width: 10px;
-    height: 14px;
+  .contacts__icon.mail {
+    width: 16px;
+    height: 12px;
   }
-}
-
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
-  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
