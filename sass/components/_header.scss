@@ -1,4 +1,8 @@
 .container__header {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
@@ -160,6 +164,14 @@
 }
 
 .wrap {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
